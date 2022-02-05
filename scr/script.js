@@ -2,10 +2,10 @@ const todoList = document.getElementById('todo-list');
 const newTodoInput = document.querySelector('#add-todo-form > input');
 
 const createButton = (textContent, callback) => {
-    const deleteItemButton = document.createElement('button');
-    deleteItemButton.textContent = textContent;
-    deleteItemButton.onclick = callback;
-    return deleteItemButton;
+    const buttonElement = document.createElement('button');
+    buttonElement.textContent = textContent;
+    buttonElement.onclick = callback;
+    return buttonElement;
 }
 
 const createListItemElement = (value) => {

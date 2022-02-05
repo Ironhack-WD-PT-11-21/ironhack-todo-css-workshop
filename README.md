@@ -1,6 +1,7 @@
 # Ironhack Todos
 ## CSS transition and DOM manipulation
 
+# DOM manipulation and logic ⚙️
 ### The application
 The Ironhack Todos is a todo app working only with DOM manipulation and has nice css transitions and animations.
 
@@ -38,8 +39,15 @@ index.html
 </body>
 ...
 ```
-## 2nd iteration: create item
+## 2nd iteration: Create dome elements with JS
+### Create buttons with callbacks 
+### Create divs 
 
 ## 3nd iteration: The form submit
 
 ## 3rd iteration: Adding a new item in the list
+
+
+# Styling 💅
+
+[to do]
