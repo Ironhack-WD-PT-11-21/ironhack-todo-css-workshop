@@ -1,0 +1,74 @@
+#todo-content {
+    width: 600px;
+}
+
+#todo-list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.todo-item {
+    box-shadow: 0px 0px 5px -4px #000000;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    z-index: 0;
+    justify-content: space-between;
+    transition:width .3s ease,
+                transform .3s ease;
+}
+
+.todo-item > button {
+    border:none;
+    cursor: pointer;
+    opacity: 0.5;
+    justify-self: flex-end;
+    background-color: tomato;
+    border-bottom: 1px solid red;
+    border-radius: 0 15px 15px 0;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    transition: width .3s ease, opacity .3s ease;
+}
+
+.todo-item > button:hover {
+    width: 200px;
+    opacity: 1;
+
+}
+
+
+.todo-value {
+    color: #5c5c5c;
+    border-radius: 15px 0 0 15px;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    transition: background-color .3s ease,
+                color .3s ease;            
+}
+.todo-item:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+.todo-value:hover {
+    color: green;
+}
+
+.todo-value.done {
+    text-decoration: line-through;
+    color: green
+}
+
+.todo-value.done::before {
+    content:'🤘';
+    position: absolute;
+    width:30px;
+    height: 30px;
+    left: -42px;
+    top: calc(50% - 15px);
+    font-size: 30px;
+}

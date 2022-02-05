@@ -1,0 +1,24 @@
+@keyframes deleteOut {
+    0% {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }20% {
+        opacity: 1;
+        height: 100%;
+    }50% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }100%{
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+}
+
+.todo-item.animate-out {
+    animation-name: deleteOut;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
